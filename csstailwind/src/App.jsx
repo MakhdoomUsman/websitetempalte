@@ -1,4 +1,5 @@
 import AboutIIG from "./component/AboutIIG";
+import "./App.css"
 import Footer from "./component/Footer";
 import Globel from "./component/Globel";
 import Mainbackground from "./component/Mainbackground";

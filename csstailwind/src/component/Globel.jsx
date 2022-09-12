@@ -4,7 +4,7 @@ import GlobelTitle from './GlobelTitle'
 
 const Globel = () => {
   return (
-    <div>
+    <div className=''>
       <GlobelTitle/>
      <GlobelBody/>
     </div>

@@ -1,12 +1,14 @@
 import React from "react";
-import arrow from "./../img/arrow.png";
-const Newsbutton = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+const Newsbutton = (props) => {
   return (
+
     <div>
-      <div className=" flex justify-center align-item-center mt-14">
-        <button className="px-3 py-2 flex bg-gradient-to-r from-purple-900 to-blue-900 text-white font-small mb-20">
-          SEE ALL NEWS{" "}
-          <img src={arrow} alt="." className=" ml-2 h-3 flex-col self-center" />
+      <div className="flex justify-center align-item-center mt-14">
+        <button className="relative btnstyle pl-3 py-2 flex bg-gradient-to-r from-purple-900 to-blue-900 hover:bg-none mb-20 text-base hover:text-white transition-all ease-in-out duration-1000">
+          {props.read}{" "}
+          <FontAwesomeIcon icon={faArrowRightLong} className="arrow ml-2 pr-3 h-5 flex-col self-center" />
         </button>
       </div>
     </div>
