@@ -45,16 +45,17 @@ const ProductRow1 = () => {
   ];
   return (
     <div>
-        <div className="grid grid-cols-8 mx-32 mt-1 hoverproperty">
-          {list.map((user, id) => (
-            <div className=" grid place-items-center h-32 w-32 rounded-full bg-[#00145c]">
-              <img src={user.icon} alt="img" className="h-5"/>
-              <div className="text-center text-[14px] my-auto mt-[-2px]">{user.name}</div>
+      <div className="grid grid-cols-8 mx-32 mt-1">
+        {list.map((user, id) => (
+          <div className=" grid place-items-center h-32 w-32 rounded-full bg-[#00145c] group-hover:transition-all duration-1000 group-hover:border group-hover:bg-[#0000] group-hover:border-white">
+            <img src={user.icon} alt="img" className="h-5" />
+            <div className="text-center text-[14px] my-auto mt-[-2px] group-hover:text-none">
+              {user.name}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    
+    </div>
   );
 };
 

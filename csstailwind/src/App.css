@@ -1,56 +1,51 @@
-
-
-.product:hover .hoverproperty>div{
-    transition: all;
-    transition-duration: 1s;
-    border: 1px solid #fff;
-    /* opacity: 0.5; */
-    transition: all;
-    background-image: url('/src/img/DSC03047_1 1.png');
+.product:hover .hoverproperty > div {
+  transition: all;
+  transition-duration: 1s;
+  border: 1px solid #fff;
+  /* opacity: 0.5; */
+  transition: all;
+  background-image: url("/src/img/DSC03047_1 1.png");
 }
-.btnstyle:hover .arrow{
-height: 25px;
-width: 30px;
-padding-right: 6px;
+.btnstyle:hover .arrow {
+  height: 25px;
+  width: 30px;
+  padding-right: 6px;
 }
-.btnstyle::after{
-content: ' ';
-position: absolute;
-width: 100%;
-height: 0.175rem;
-left: 0;
-bottom: 0;
-background: #fff;
-transform: scale(1, 0);
+.btnstyle::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transform: scale(1, 0);
 }
 
-.btnstyle:hover::after{
-  
-    transform: scale(1, 1);
-    transition: all;
-    transition-duration: 1s;
+.btnstyle:hover::after {
+  transform: scale(1, 1);
+  transition: all;
+  transition-duration: 1s;
 }
 
-
-.btnnewsstyle:hover .arrow{
-height: auto;
-padding-right: 6px;
-color: #000;
+.btnnewsstyle:hover .arrow {
+  height:30px;
+  padding-right: 6px;
+  color: #000;
 }
-.btnnewsstyle::after{
-content: ' ';
-position: absolute;
-width: 100%;
-height: 0.175rem;
-left: 0;
-bottom: 0;
-background: #000;
-transform: scale(1, 0);
-
+.btnnewsstyle::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  transform: scale(1, 0);
 }
 
-.btnnewsstyle:hover::after{
-    transform: scale(1, 1);
-    transition: all;
-    transition-duration: 1s;
+.btnnewsstyle:hover::after {
+  transform: scale(1, 1);
+  transition: all;
+  transition-duration: 1s;
 }
